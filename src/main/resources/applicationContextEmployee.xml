@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--    <context:property-placeholder location="classpath:application.properties"/>
+
+    <bean id="happyFortune"
+          class="com.example.springcore.xml.HappyFortuneService">
+    </bean>
+
+    <bean id="sadFortune"
+          class="com.example.springcore.xml.SadFortuneService">
+    </bean>
+
+    <bean id="beanProcessor"
+          class="com.example.springcore.xml.BeanProcessor">
+    </bean>
+
+    <bean id="teacher"
+          class="com.example.springcore.xml.Teacher"
+          init-method="customInit"
+          destroy-method="customDestroy"
+          scope="prototype"
+    >
+        <constructor-arg ref="happyFortune"/>
+    </bean>
+
+    <bean id="programmer"
+          class="com.example.springcore.xml.Programmer">
+        <property name="sadFortuneService" ref="sadFortune"/>
+        <property name="email" value="${email}"/>
+    </bean>-->
+   <context:component-scan base-package="com.example.springcore.annotation"/>
+   <context:property-placeholder location="classpath:application.properties"/>
+
+</beans>
+
+
+
+
+
